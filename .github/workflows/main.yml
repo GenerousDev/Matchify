@@ -30,9 +30,16 @@ jobs:
       working-directory: ./matchify-frontend
       run: npm install
 
-    - name: Start Frontend Server, Run Frontend Tests and Generate Report
+    - name: Start Frontend Server
       working-directory: ./matchify-frontend
-      run: npm start & npm test
+      run: npm start &
+
+    - name: Wait for Frontend Server to be Ready
+      run: sleep 15  # Adjust the wait time as necessary for your server to start
+
+    - name: Run Frontend Tests
+      working-directory: ./matchify-frontend
+      run: npm test
 
     - name: Upload Frontend Test Report
       uses: actions/upload-artifact@v3
