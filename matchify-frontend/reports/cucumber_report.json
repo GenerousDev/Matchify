@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 220582
+              "duration": 193749
             }
           },
           {
@@ -26,9 +26,8 @@
               "location": "features/step-definitions/steps.js:7"
             },
             "result": {
-              "status": "failed",
-              "duration": 43523624,
-              "error_message": "Error: WebDriver Bidi command \"browsingContext.navigate\" failed with error: unknown error - net::ERR_CONNECTION_REFUSED\n    at BidiHandler.send (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:414:23)\n    at BidiHandler.browsingContextNavigate (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:683:31)\n    at Browser.value (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:1223:26)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Browser.url3 (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/webdriverio/build/index.js:4906:24)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:23)\n    at async World.<anonymous> (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/features/step-definitions/steps.js:8:5)"
+              "status": "passed",
+              "duration": 92945833
             }
           },
           {
@@ -40,8 +39,8 @@
               "location": "features/step-definitions/steps.js:11"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 140055540
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": "features/step-definitions/steps.js:15"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 42822373
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "features/step-definitions/steps.js:19"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 28310500
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "features/step-definitions/steps.js:23"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 43974581
             }
           },
           {
@@ -92,8 +91,8 @@
               "location": "features/step-definitions/steps.js:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 48844788
             }
           },
           {
@@ -105,8 +104,8 @@
               "location": "features/step-definitions/steps.js:31"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 59564496
             }
           },
           {
@@ -118,8 +117,8 @@
               "location": "features/step-definitions/steps.js:43"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 36309165
             }
           },
           {
@@ -131,8 +130,8 @@
               "location": "features/step-definitions/steps.js:47"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1555751331
             }
           },
           {
@@ -144,8 +143,8 @@
               "location": "features/step-definitions/steps.js:53"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 32795333
             }
           },
           {
@@ -153,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 110833
+              "duration": 134750
             }
           }
         ],
@@ -172,7 +171,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57542
+              "duration": 33582
             }
           },
           {
@@ -184,9 +183,8 @@
               "location": "features/step-definitions/steps.js:7"
             },
             "result": {
-              "status": "failed",
-              "duration": 11226623,
-              "error_message": "Error: WebDriver Bidi command \"browsingContext.navigate\" failed with error: unknown error - net::ERR_CONNECTION_REFUSED\n    at BidiHandler.send (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:414:23)\n    at BidiHandler.browsingContextNavigate (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:683:31)\n    at Browser.value (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:1223:26)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Browser.url3 (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/webdriverio/build/index.js:4906:24)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:23)\n    at async World.<anonymous> (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/features/step-definitions/steps.js:8:5)"
+              "status": "passed",
+              "duration": 17821540
             }
           },
           {
@@ -198,8 +196,8 @@
               "location": "features/step-definitions/steps.js:43"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33374289
             }
           },
           {
@@ -211,8 +209,8 @@
               "location": "features/step-definitions/steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5152040
             }
           },
           {
@@ -224,8 +222,8 @@
               "location": "features/step-definitions/steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6625289
             }
           },
           {
@@ -237,8 +235,8 @@
               "location": "features/step-definitions/steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7163499
             }
           },
           {
@@ -250,8 +248,8 @@
               "location": "features/step-definitions/steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6128165
             }
           },
           {
@@ -263,8 +261,8 @@
               "location": "features/step-definitions/steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5757498
             }
           },
           {
@@ -276,8 +274,8 @@
               "location": "features/step-definitions/steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4778916
             }
           },
           {
@@ -285,7 +283,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 169540
+              "duration": 23583
             }
           }
         ],
@@ -304,7 +302,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 72707
+              "duration": 19999
             }
           },
           {
@@ -316,9 +314,8 @@
               "location": "features/step-definitions/steps.js:7"
             },
             "result": {
-              "status": "failed",
-              "duration": 7795125,
-              "error_message": "Error: WebDriver Bidi command \"browsingContext.navigate\" failed with error: unknown error - net::ERR_CONNECTION_REFUSED\n    at BidiHandler.send (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:414:23)\n    at BidiHandler.browsingContextNavigate (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:683:31)\n    at Browser.value (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:1223:26)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Browser.url3 (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/webdriverio/build/index.js:4906:24)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:23)\n    at async World.<anonymous> (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/features/step-definitions/steps.js:8:5)"
+              "status": "passed",
+              "duration": 14350916
             }
           },
           {
@@ -330,8 +327,8 @@
               "location": "features/step-definitions/steps.js:11"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 52689208
             }
           },
           {
@@ -343,8 +340,8 @@
               "location": "features/step-definitions/steps.js:15"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 39069997
             }
           },
           {
@@ -356,8 +353,8 @@
               "location": "features/step-definitions/steps.js:19"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 20772251
             }
           },
           {
@@ -369,8 +366,8 @@
               "location": "features/step-definitions/steps.js:23"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 50214375
             }
           },
           {
@@ -382,8 +379,8 @@
               "location": "features/step-definitions/steps.js:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 37641372
             }
           },
           {
@@ -395,8 +392,8 @@
               "location": "features/step-definitions/steps.js:43"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30768416
             }
           },
           {
@@ -408,8 +405,8 @@
               "location": "features/step-definitions/steps.js:66"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 12511288
             }
           },
           {
@@ -417,7 +414,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 116708
+              "duration": 25666
             }
           }
         ],
@@ -436,7 +433,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 45500
+              "duration": 18417
             }
           },
           {
@@ -448,9 +445,8 @@
               "location": "features/step-definitions/steps.js:7"
             },
             "result": {
-              "status": "failed",
-              "duration": 13647747,
-              "error_message": "Error: WebDriver Bidi command \"browsingContext.navigate\" failed with error: unknown error - net::ERR_CONNECTION_REFUSED\n    at BidiHandler.send (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:414:23)\n    at BidiHandler.browsingContextNavigate (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:683:31)\n    at Browser.value (file:///Users/mac/Desktop/Project/Darey%20Assessment/matchify-frontend/node_modules/webdriver/build/node.js:1223:26)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Browser.url3 (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/webdriverio/build/index.js:4906:24)\n    at Browser.wrapCommandFn (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/node_modules/@wdio/utils/build/index.js:893:23)\n    at async World.<anonymous> (/Users/mac/Desktop/Project/Darey Assessment/matchify-frontend/features/step-definitions/steps.js:8:5)"
+              "status": "passed",
+              "duration": 16035124
             }
           },
           {
@@ -462,8 +458,8 @@
               "location": "features/step-definitions/steps.js:37"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30074499
             }
           },
           {
@@ -475,8 +471,8 @@
               "location": "features/step-definitions/steps.js:72"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 11225290
             }
           },
           {
@@ -484,7 +480,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 87250
+              "duration": 24792
             }
           }
         ],

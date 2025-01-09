@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npx wdio run wdio.conf.js && node index.js",
+    "test": "npx wdio run wdio.conf.js && node Setup.js",
     "eject": "react-scripts eject",
     "wdio": "wdio run ./wdio.conf.js"
   },
