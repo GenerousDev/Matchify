@@ -7,10 +7,13 @@ This project contains a React profile creation form and automated tests using We
 ├── src/
 │   └── components/
 │       └── ProfileCreationForm.jsx
-├── test/
-│   ├── specs/
-│   │   └── profileCreation.test.js
-│   └── fixtures/
+├── features/
+│   ├── step-definitions/
+│   │   └── steps.js
+│   ├── report/
+│   │   └── cucumber_report.html
+│   ├── login.feature
+│   └── testdata/
 │       ├── valid-profile-pic.jpg
 │       └── invalid-file.txt
 ├── wdio.conf.js
@@ -29,14 +32,13 @@ This project contains a React profile creation form and automated tests using We
 npm install
 ```
 
-2. Install required packages:
-```bash
-npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/spec-reporter webdriverio
+1. You can decide to run cucumber tests in GUI mode:
+- To run Cucumber tests in GUI mode with WebDriverIO, you need to modify your wdio.conf.js configuration file and comment this code out in wdio.conf.js.
 ```
-
-3. Place test fixtures:
-- Add a valid image file named `valid-profile-pic.jpg` in `test/fixtures/`
-- Add a text file named `invalid-file.txt` in `test/fixtures/`
+'goog:chromeOptions': {
+        args: ['--headless', '--disable-gpu', '--window-size=1920x1080']
+      }
+```
 
 ## Running the Application
 
@@ -52,7 +54,7 @@ npm start
 1. Make sure the React application is running
 2. In a separate terminal, run the tests:
 ```bash
-npx wdio run wdio.conf.js
+npm test
 ```
 
 ## Test Cases
@@ -84,13 +86,3 @@ The Profile Creation Form includes:
 - Image upload with file type validation
 - Success message on successful submission
 - Error messages for invalid inputs
-
-## Troubleshooting
-
-If you encounter any issues:
-
-1. Ensure all dependencies are installed correctly
-2. Verify the React application is running before executing tests
-3. Check Chrome browser is installed and up to date
-4. Verify test fixtures are in the correct location
-5. Check console for any error messages
