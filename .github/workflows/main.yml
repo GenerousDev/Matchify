@@ -30,13 +30,9 @@ jobs:
       working-directory: ./matchify-frontend
       run: npm install
 
-    - name: Start Frontend Server
+    - name: Start Frontend Server, Run Frontend Tests and Generate Report
       working-directory: ./matchify-frontend
-      run: npm start
-
-    - name: Run Frontend Tests and Generate Report
-      working-directory: ./matchify-frontend
-      run: npm test
+      run: npm start & npm test
 
     - name: Upload Frontend Test Report
       uses: actions/upload-artifact@v3
