@@ -30,6 +30,10 @@ jobs:
       working-directory: ./matchify-frontend
       run: npm install
 
+    - name: Start Frontend Server
+      working-directory: ./matchify-frontend
+      run: npm start &
+      
     - name: Run Frontend Tests and Generate Report
       working-directory: ./matchify-frontend
       run: npm test
