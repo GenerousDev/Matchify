@@ -86,3 +86,5 @@ The Profile Creation Form includes:
 - Image upload with file type validation
 - Success message on successful submission
 - Error messages for invalid inputs
+
+<img width="1512" alt="Screenshot 2025-01-10 at 12 21 26 PM" src="https://github.com/user-attachments/assets/0b1a427e-8aa2-405b-b44f-694c96333f97" />
