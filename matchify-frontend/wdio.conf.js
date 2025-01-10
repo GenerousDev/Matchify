@@ -5,7 +5,7 @@ exports.config = {
 
     onPrepare: () => {
         // Initialize Sentry with your DSN (Data Source Name) from your Sentry project.
-        Sentry.init({ dsn: process.env.DSN });
+        Sentry.init({ dsn: secrets.DSN });
     },
     afterTest: async (test, context, result) => {
         if (result.error) {
