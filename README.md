@@ -1,9 +1,9 @@
 # Matchify
-
+```
 matchify/
 ├── matchify-frontend/         # React frontend application with automation
 └── matchify-backend/         # Backend API server with automation
-
+```
 # Clone the repository
 git clone https://github.com/yourusername/matchify.git
 
