@@ -133,3 +133,5 @@ curl -X POST http://localhost:3001/api/profiles \
 - [Jest Documentation](https://jestjs.io/)
 - [Supertest Documentation](https://github.com/visionmedia/supertest)
 - [JWT Documentation](https://jwt.io/)
+<img width="970" alt="Screenshot 2025-01-10 at 12 20 28 PM" src="https://github.com/user-attachments/assets/78e00936-9503-49da-a8ce-dfaa25ec8785" />
+
