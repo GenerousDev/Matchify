@@ -1,32 +1,28 @@
-const Sentry = require('@sentry/react');
+const Sentry = require('@sentry/node');
+const { ProfilingIntegration } = require("@sentry/profiling-node");
 require('dotenv').config();
+const fs = require('fs');
+
+// Initialize Sentry
+Sentry.init({
+  dsn: process.env.SENTRY_DSN,
+  tracesSampleRate: 0.1, // Adjust as needed
+  beforeSend(event) {
+    // Remove or conditionally disable in production
+    // console.log('Sending event to Sentry:', event); 
+    return event;
+  },
+  environment: process.env.NODE_ENV || 'development' // Set the environment
+});
+
+process.on('unhandledRejection', (error) => {
+  console.error("Unhandled Rejection:", error); // Use console.error for errors
+  Sentry.captureException(error);
+});
+
+let errorReports = [];
 
 exports.config = {
-
-    onPrepare: () => {
-        // Initialize Sentry with your DSN (Data Source Name) from your Sentry project.
-        Sentry.init({ dsn: secrets.DSN });
-    },
-    afterTest: async (test, context, result) => {
-        if (result.error) {
-          // Log error to Sentry
-          Sentry.captureException(new Error(result.error));
-    
-          // Write error to file
-          const errorReport = {
-            testName: test.title,
-            timestamp: new Date().toISOString(),
-            errorDetails: result.error.stack,
-          };
-    
-          fs.appendFileSync('./error-report.json', JSON.stringify(errorReport, null, 2) + ',\n');
-        }
-      },
-      onComplete: () => {
-        // Optionally, you can add a completion handler to clean up after tests.
-        Sentry.close();
-    },
-
     //
     // ====================
     // Runner Configuration
@@ -363,4 +359,46 @@ exports.config = {
     */
     // afterAssertion: function(params) {
     // }
+
+    // onPrepare: () => {
+    //     console.log('Initializing Sentry with DSN1:', process.env.SENTRY_DSN);
+    //     Sentry.init({ dsn: process.env.SENTRY_DSN ,
+    //         beforeSend(event) {
+    //                         console.log('Sending event to Sentry:', event);
+    //                         return event;
+    //         }
+    //     })
+        
+    //     console.log('Initializing Sentry with DSN2:', process.env.SENTRY_DSN);
+    // },
+
+  afterTest: function (test, context, { error }) {
+    if (error) {
+      console.error(`Error captured in test: ${test.title}`, error); // Use console.error and include the error object
+      Sentry.captureException(error, {
+        extra: {
+          testName: test.title,
+          browser: browser.capabilities.browserName,
+          testContext: context // Add the context to the extra data
+        }
+      });
+
+      errorReports.push({ // Push the error report to the array
+        testName: test.title,
+        timestamp: new Date().toISOString(),
+        errorDetails: error.stack, // Use the error object directly
+        errorMessage: error.message
+      });
+    }
+  },
+
+  onComplete: () => {
+    if (errorReports.length > 0) {
+      fs.writeFileSync('./error-report.json', JSON.stringify(errorReports, null, 2)); // Write the entire array at once
+      console.log(`Wrote ${errorReports.length} errors to error-report.json`);
+    } else {
+        console.log("No errors to write to file.")
+    }
+    Sentry.close();
+  },
 }

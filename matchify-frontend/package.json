@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sentry/node": "^8.48.0",
+    "@sentry/profiling-node": "^8.48.0",
     "@sentry/react": "^8.48.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^16.1.0",
@@ -28,7 +30,8 @@
     "build": "react-scripts build",
     "test": "npx wdio run wdio.conf.js && node Setup.js",
     "eject": "react-scripts eject",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "test:local": "wdio run wdio.conf.js"
   },
   "eslintConfig": {
     "extends": [
