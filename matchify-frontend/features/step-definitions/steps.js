@@ -5,7 +5,7 @@ const { $ } = require('@wdio/globals');
 const { browser } = require('@wdio/globals');
 
 Given('I am on the profile creation page', async () => {
-    await browser.url('/');
+    await browser.url('/')
 });
 
 When('I enter {string} as name', async (name) => {
@@ -50,12 +50,19 @@ Then('I should see a success message', async () => {
     await expect(successMessage).toHaveText('Profile created successfully!');
 });
 
+// Then('the form should be cleared', async () => {
+//     await expect($('#name')).toHaveValue('');
+//     await expect($('#age')).toHaveValue('');
+//     await expect($('#gender')).toHaveValue('');
+//     await expect($('#location')).toHaveValue('');
+//     await expect($('#interests')).toHaveValue('');
+// });
+
 Then('the form should be cleared', async () => {
-    await expect($('#name')).toHaveValue('');
-    await expect($('#age')).toHaveValue('');
-    await expect($('#gender')).toHaveValue('');
-    await expect($('#location')).toHaveValue('');
-    await expect($('#interests')).toHaveValue('');
+    const fields = ['#name', '#age', '#gender', '#location', '#interests'];
+    for (const field of fields) {
+      await expect($(field)).toHaveValue('');
+    }
 });
 
 Then('I should see error message for {string} field', async (field) => {

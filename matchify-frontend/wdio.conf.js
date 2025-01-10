@@ -1,4 +1,32 @@
+const Sentry = require('@sentry/react');
+require('dotenv').config();
+
 exports.config = {
+
+    onPrepare: () => {
+        // Initialize Sentry with your DSN (Data Source Name) from your Sentry project.
+        Sentry.init({ dsn: process.env.DSN });
+    },
+    afterTest: async (test, context, result) => {
+        if (result.error) {
+          // Log error to Sentry
+          Sentry.captureException(new Error(result.error));
+    
+          // Write error to file
+          const errorReport = {
+            testName: test.title,
+            timestamp: new Date().toISOString(),
+            errorDetails: result.error.stack,
+          };
+    
+          fs.appendFileSync('./error-report.json', JSON.stringify(errorReport, null, 2) + ',\n');
+        }
+      },
+      onComplete: () => {
+        // Optionally, you can add a completion handler to clean up after tests.
+        Sentry.close();
+    },
+
     //
     // ====================
     // Runner Configuration

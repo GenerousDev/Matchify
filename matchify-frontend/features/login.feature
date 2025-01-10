@@ -38,3 +38,14 @@ Feature: Profile Creation
   Scenario: Validate image upload
     When I upload an invalid file
     Then I should see "Please upload a valid image file" error for profile picture
+
+  Scenario: Successfully create a profile with valid inputs (Simulating Flakiness)
+    When I enter "John Doe" as name
+    And I enter "25" as age
+    And I select "male" as gender
+    And I enter "New York" as location
+    And I enter "Reading, Traveling" as interests
+    And I upload a valid profile picture
+    And I click the submit button
+    Then I should see a success message
+    And the form should be cleared
